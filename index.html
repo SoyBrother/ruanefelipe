@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grau no Sertão</title>
-    <link rel=”stylesheet” href=”styles.css”>
-</head>
-<body>
-    {
-        background-color: var(--cor-de-fundo);
-    }
-    Grau no Sertão
-     {
-        background-color: purple;
+    <title>Minha Loja Online</title>
+    <style>
+      /* Estilos para dispositivos móveis */
+      @media screen and (max-width: 480px) {
+        /* Estilos para cabeçalho */
+        header {
+          background-color: #4CAF50;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
         }
-        <header class="cabeçalho">
-            <span class=”cabeçalho__menu-hamburguer”></span>
-            <img src=”img/Logo.svg” alt=”Logo da Alurabooks”>
-            <a href=”#”><img src=”img/Favoritos.svg” alt=”Meus favoritos”></a>
-            <a href=”#”><img src=”img/Compras.svg” alt=”Carrinho de compras”></a>
-            <a href=”#”><img src=”img/Usuario.svg” alt=”Meu perfil”></a>
-            </header>
-</body>
+        
+        header h1 {
+          font-size: 24px;
+          margin: 0;
+        }
+        
+        /* Estilos para lista de produtos */
+        ul.products {
+          margin: 0;
+          padding: 0;
+        }
+        
+        ul.products li {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+        
+        ul.products li h2 {
+          font-size: 18px;
+          margin: 0 0 5px;
+        }
+        
+        ul.products li p {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+      
+      /* Estilos para dispositivos de tela maior */
+      @media screen and (min-width: 481px) {
+        /* Estilos para lista de produtos */
+        ul.products {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 0 -10px;
+        }
+        
+        ul.products li {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          flex-basis: calc(33.33% - 20px);
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        ul.products li h2 {
+          font-size: 18px;
+          margin: 0 0 5px;
+        }
+        
+        ul.products li p {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Minha Loja Online</h1>
+    </header>
+    <ul class="products">
+      <li>
+        <h2>GOD OF WAR 2018</h2>
+        <p>R$ 299,90</p>
+      </li>
+      <li>
+        <h2>CYBERPUNK 2077</h2>
+        <p>R$ 149,99</p>
+      </li>
+      <li>
+        <h2>RED DEAD REDEMPTION 2</h2>
+        <p>R$ 199,99</p>
+      </li>
+      <li>
+        <h2>DARK SOULS</h2>
+        <p>R$ 249,99</p>
+      </li>
+    </ul>
+  </body>
 </html>
